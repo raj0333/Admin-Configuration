@@ -40,20 +40,23 @@ const LoginPage = () => {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center px-4 transition-colors duration-500"
+      className="min-h-screen flex items-center justify-center px-4 transition-colors duration-500 relative overflow-hidden"
       style={{
-        background: isSuperAdmin
-          ? "hsl(220, 10%, 94%)"
-          : "hsl(var(--background))",
+        backgroundImage: "url('https://logistics-react-app.vercel.app/assets/hero-bg-BX_ozt_s.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
       }}
     >
-      <div className="w-full max-w-md">
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}></div>
+      <div className="w-full max-w-md z-50">
         {/* Logo */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-foreground tracking-tight font-heading">
+          <h1 className="text-3xl text-white font-bold text-foreground tracking-tight font-heading">
             TireFleet
           </h1>
-          <p className="text-sm text-muted-foreground mt-1">
+          <p className="text-sm text-white text-muted-foreground mt-1">
             Logistics Command Center
           </p>
         </div>
@@ -152,7 +155,7 @@ const LoginPage = () => {
                 </>
               )}
             </button>
-          </form>   
+          </form>
 
           <div className="mt-4 text-center">
             <button
