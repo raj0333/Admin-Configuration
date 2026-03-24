@@ -54,7 +54,7 @@ const LoginPage = () => {
         {/* Logo */}
         <div className="text-center mb-8">
           <h1 className="text-3xl text-white font-bold text-foreground tracking-tight font-heading">
-            TireFleet
+            Car Hauling  
           </h1>
           <p className="text-sm text-white text-muted-foreground mt-1">
             Logistics Command Center
